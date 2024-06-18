@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvWash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="175dp"
+            android:layout_height="200dp"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:id="@+id/iconWash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/mesincuci"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <TextView
+                android:id="@+id/typeWash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="75dp"
+                android:text="@string/just_wash"
+                android:textColor="@color/dark_Blue"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/descWash"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:text="@string/descWash"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/typeWash"
+                tools:ignore="MissingConstraints,TextViewEdits" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvIron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="175dp"
+            android:layout_height="200dp"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:id="@+id/iconIron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/setrika"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <TextView
+                android:id="@+id/typeIron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="75dp"
+                android:text="@string/iron_wash"
+                android:textColor="@color/dark_Blue"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/descIron"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:text="@string/descIron"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/typeIron"
+                tools:ignore="MissingConstraints,TextViewEdits" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_row="2"
+        android:layout_column="0"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="175dp"
+            android:layout_height="200dp"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:id="@+id/iconBed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/kasur"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <TextView
+                android:id="@+id/typeBed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="75dp"
+                android:paddingTop="10dp"
+                android:text="@string/bed"
+                android:textColor="@color/dark_Blue"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/descBed"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:text="@string/descBed"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/typeBed"
+                tools:ignore="MissingConstraints,TextViewEdits" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvShoesBag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_row="2"
+        android:layout_column="1"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="175dp"
+            android:layout_height="200dp"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:id="@+id/iconShoesBag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/sepatu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <TextView
+                android:id="@+id/typeShoesBag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="75dp"
+                android:paddingTop="10dp"
+                android:text="@string/shoes_bag"
+                android:textColor="@color/dark_Blue"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/descShoesBag"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:text="@string/descShoes"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/typeShoesBag"
+                tools:ignore="MissingConstraints,TextViewEdits" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="175dp"
+            android:layout_height="200dp"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:id="@+id/iconDry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/baju"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <TextView
+                android:id="@+id/typeDry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="75dp"
+                android:paddingTop="10dp"
+                android:text="@string/dry_cleaning"
+                android:textColor="@color/dark_Blue"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/descDry"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:text="@string/descDry"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/typeDry"
+                tools:ignore="MissingConstraints,TextViewEdits" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCarpet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_row="1"
+        android:layout_column="1"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="175dp"
+            android:layout_height="200dp"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:id="@+id/iconCarpet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/karpet"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <TextView
+                android:id="@+id/typeCarpet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="75dp"
+                android:paddingTop="10dp"
+                android:text="@string/carpet"
+                android:textColor="@color/dark_Blue"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/descCarpet"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:text="@string/descCarpet"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/typeCarpet"
+                tools:ignore="MissingConstraints,TextViewEdits" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</GridLayout>
